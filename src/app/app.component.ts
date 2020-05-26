@@ -7,13 +7,4 @@ import { UsersService } from './shared/users.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  activeUsers: string[];
-  inactiveUsers: string[];
-
-  constructor(private usersService: UsersService) {}
-
-  ngOnInit() {
-    this.activeUsers = this.usersService.activeUsers;
-    this.inactiveUsers = this.usersService.inactiveUsers;
-  }
 }
